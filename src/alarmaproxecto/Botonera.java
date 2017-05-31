@@ -25,7 +25,8 @@ public class Botonera {
         
     }
     public static void configAlarm(){
-        
+         Display.showLeds(false,true,true);
+        Display.showHoursMins();
     } 
     public static void plusHours(){
 //        return auxHr.plusHours(1);
@@ -41,6 +42,6 @@ public class Botonera {
         Display.showHoursMins();
     }
     public static void stopAlarm(){
-        
+     AlarmaProxecto.timer.cancel();
     }
 }

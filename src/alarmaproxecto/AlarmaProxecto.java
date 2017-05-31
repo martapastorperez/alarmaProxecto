@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 
 public class AlarmaProxecto {
 public static LocalTime  horaActual,alarm;
+static Timer timer;
  
       
     public static void main(String[] args) {

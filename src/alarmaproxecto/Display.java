@@ -3,11 +3,16 @@ package alarmaproxecto;
 
 
 public class Display {
-   boolean ledClock,ledAlarm,ledSet;
+  static  boolean ledClock,ledAlarm,ledSet;
     
     public static void showHoursMins(){
-        //System.out.println(AlarmaProxecto.horaActual.getHour()+" : "+AlarmaProxecto.horaActual.getMinute());
-        
+       
+        if(Display.ledAlarm ==true){
+        System.out.println(AlarmaProxecto.horaActual.getHour()+" : "+AlarmaProxecto.horaActual.getMinute());
+        }else{
+               System.out.println(AlarmaProxecto.horaActual.getHour()+": "+AlarmaProxecto.horaActual.getMinute()); 
+               
+    }
     } 
     
     public static void showAlarm(){
@@ -15,8 +20,8 @@ public class Display {
         
     }
     public static void showLeds(boolean ledClock,boolean ledAlarm,boolean ledSet){
-//        ledClock=showClock;
-//        ledAlarm=false;
-//        ledSet=true;
+        ledClock=true;
+        ledAlarm=false;
+        ledSet=true;
     }
 }
