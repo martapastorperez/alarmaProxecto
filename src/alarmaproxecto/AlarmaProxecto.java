@@ -10,7 +10,10 @@ import javax.swing.JOptionPane;
 public class AlarmaProxecto {
 public static LocalTime  horaActual,alarm;
 static Timer timer;
- 
+ /**
+  * Menu para manejar nuestro proyecto
+  * @param args 
+  */
       
     public static void main(String[] args) {
       //  Timer comprobacion=new Timer(1500, new ActionListener()){
